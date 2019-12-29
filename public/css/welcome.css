@@ -1,0 +1,8 @@
+html{ /* Общая корректировка страницы */
+    scroll-behavior: smooth;
+}
+
+body{ /* Корректировка body страницы */
+    margin: 0;
+    background-color: #4f9aa9;    
+}
