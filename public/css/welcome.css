@@ -1,8 +1,97 @@
 html{ /* Общая корректировка страницы */
     scroll-behavior: smooth;
+
+    font-family: 'Century Gothic';
 }
 
 body{ /* Корректировка body страницы */
     margin: 0;
-    background-color: #4f9aa9;    
+    background-color: #4f9aa9;
+    
 }
+
+a:link { /* Убирает подчеркивание для ссылок */
+    text-decoration: none; 
+   } 
+
+h1{ /* Корректировка всех заголовков h1 страницы */
+    font-family: 'Century Gothic';
+    color: #18456b;
+}
+
+.firstContainer{ /* Контейнер 1 части страницы */
+    height: 1250px;
+    text-align: center;
+}
+
+.firstTitleText{
+    font-size: 50px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 250px;
+    border-top: 4px;
+    border-color: #4f9aa9;;
+    border-top-style: solid;
+}
+
+
+.secondTitleText{
+    font-size: 25px;
+    position: absolute;
+    top: 1194px;
+    width: 500px;
+    height: 250px;
+}
+
+.imageContainer{ /* Контейнер для фигуры */
+    width: 100%;
+    height: 100%;   
+}
+
+.image{ /* Геометрическая фигура на задний план */
+    width: 100%;
+    height: 800px;    
+}
+
+.btn-circle { /* Кнопка перехода к редактированию данных */
+    position: absolute; 
+    top: 450px;
+    width: 270px;
+    height: 270px;
+    border-radius: 150px;
+    border: white;    
+    background-color: #4f9aa9;
+    margin-left: -135px;
+    cursor: pointer;
+}
+
+.btnText { /* Текст кнопки перехода к редактированию данных  */
+    font-family: 'Century Gothic';
+    color: #18456b;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    line-height: 120px; 
+    width: 195px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.secondContainer{ /* Контейнер 2 части страницы */
+    height: 700px;
+    text-align: center;
+}
+
+#mainCrudContainer{
+    background-color: whitesmoke;
+}
+
+  
+ 
