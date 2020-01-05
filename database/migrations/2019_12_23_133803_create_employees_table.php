@@ -16,7 +16,7 @@ class CreateEmployeesTable extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('name');
-            $table->text('dob');
+            $table->data('dob');
             $table->text('position');
             $table->timestamps();
         });

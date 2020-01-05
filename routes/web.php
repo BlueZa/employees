@@ -15,10 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 }); 
 
-Route::get('/employees','EmployeesController@index');
-
-Route::post('/addEmployee','EmployeesController@insert');
-
-Route::post('/editEmployee','EmployeesController@update');
-
-Route::post('/delEmployee','EmployeesController@delete');
+Route::resource('/employee','EmployeesController');
