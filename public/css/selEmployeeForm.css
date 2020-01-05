@@ -1,0 +1,65 @@
+/* Список выбора */
+.selector{
+    width: 400px; 
+    margin-top: 15px;
+    font-family: 'Century Gothic';
+    font-size: 11pt;
+}
+
+/* Кнопка выбора */
+.button-parent {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+  .button-parent--inner {
+    padding: 4em 1em;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    
+    position: relative;
+    color: black;
+    display: inline-block;
+  }
+
+.button-item {
+    padding-bottom: 2em;
+  }
+  
+  .btn-1 {
+    width: 400px;
+    margin-top: 15px;
+    padding: 1em 3em;
+    border: 3px solid #4f9aa9;;
+    transition: all 300ms ease;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+  }
+  .btn-1:before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: #4A90E2;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transition: all 0ms ease;
+  }
+  .btn-1:hover {
+    color: white;
+    box-shadow: none;
+  }
+  .btn-1:hover:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #4A90E2;
+    top: 0;
+    left: 0%;
+    z-index: -1;
+    transition: all 300ms ease;
+  }
