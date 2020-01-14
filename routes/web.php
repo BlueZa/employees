@@ -11,8 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/addEmployee', function () {
+    return view('addEmployee');
 }); 
 
-Route::resource('/employee','EmployeesController');
+Route::get('/','EmployeesController@index');
+
+Route::post('/insert','EmployeesController@insert');
+
+Route::get('/edit/{id}','EmployeesController@edit');
+
+Route::put('/update/{id}','EmployeesController@updateData');
+
+Route::get('/delete/{id}','EmployeesController@delete');
