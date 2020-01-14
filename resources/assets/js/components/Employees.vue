@@ -3,12 +3,14 @@
         <div id="mainCrudContainer" class="container-fluid">
             <div class="row ml-5 ">
                 <div class="row mt-3">
+
                     <div class="col-lg-6">
                         <a class="h3" href="/">Сотрудники</a>
                     </div>
                     <div class="col-lg-6">
                         <a href="/addEmployee" class="btn btn-info float-right"><i class="fas fa-user"></i>&nbsp;&nbsp;Добавить</a>
                     </div>
+
                 </div>
             </div>
 
@@ -27,6 +29,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <table class="table table-bordered tablep-stripted">
+
                     <thead>
                         <tr class="text-center bg-info text-light">
                             <th>ID</th>
@@ -47,6 +50,7 @@
                              <td><a href="#" class="text-danger" @click="showDelModal = true; selectEmployee(employee)"><i class="fas fa-trash"></i></a></td>
                         </tr>
                     </tbody>
+
                 </table>
             </div>
         </div>
@@ -55,6 +59,7 @@
        <div id="overlay" v-if="showDelModal">
             <div class="modal-dialog">
                 <div class="modal-content">
+
                     <div class="model-header">
                         <button type="button" class="close mr-1" @click="showDelModal=false">
                             <span aria-hidden="true">&times;</span>
@@ -70,6 +75,7 @@
                             <button class="btn btn-info btn-block btn-lg alert-success" @click="showDelModal = false;">Нет</button>
                         </div>                                        
                     </div>
+
                 </div>
             </div>
         </div>

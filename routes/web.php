@@ -16,12 +16,10 @@ Route::get('/addEmployee', function () {
     return view('addEmployee');
 }); 
 
-Route::get('/','EmployeesController@index');
+Route::get('/employees','EmployeesController@index');
 
-Route::post('/insert','EmployeesController@insert');
+Route::post('/addEmployee','EmployeesController@insert');
 
-Route::get('/edit/{id}','EmployeesController@edit');
+Route::post('/editEmployee','EmployeesController@update');
 
-Route::put('/update/{id}','EmployeesController@updateData');
-
-Route::get('/delete/{id}','EmployeesController@delete');
+Route::post('/delEmployee','EmployeesController@delete');
